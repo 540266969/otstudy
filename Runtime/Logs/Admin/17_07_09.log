@@ -1,0 +1,89 @@
+[ 2017-07-09T09:39:44+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-09T09:39:55+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499564395','laowangba在2017-07-09 09:39登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 F:\20170217php\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given F:\20170217php\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499477995 LIMIT 1   [ RunTime:0.0240s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499564395',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+
+[ 2017-07-09T09:42:05+08:00 ] 127.0.0.1 /admin.php?s=/Menu/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_menu` (`title`,`sort`,`url`,`pid`,`group`,`hide`,`is_dev`,`tip`,`id`,`status`) VALUES ('小区租售','0','Center/index','124','物业管理','0','0','没有说明啦','0','1') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','125','1499564525','操作url：/admin.php?s=/Menu/add.html') [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:43:37+08:00 ] 127.0.0.1 /admin.php?s=/Menu/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_menu` (`title`,`sort`,`url`,`pid`,`group`,`hide`,`is_dev`,`tip`,`id`,`status`) VALUES ('活动管理','0','Activity/index','124','物业管理','0','0','还是没有','0','1') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','126','1499564617','操作url：/admin.php?s=/Menu/add.html') [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:43:44+08:00 ] 127.0.0.1 /admin.php?s=/Activity/index.html
+ERR: 无法加载控制器:Activity
+
+[ 2017-07-09T10:34:36+08:00 ] 127.0.0.1 /admin.php?s=/Activity/index.html
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM onethink_activity _a INNER JOIN onethink_document on onethink_activity.document_id=onethink_document.id INNER JOIN onethink_ucenter_member on onethink_activity.member_id=onethink_ucenter_member.id  WHERE `id` = 'username,title,description,deadline,add_time,A.status' LIMIT 1  
+
+[ 2017-07-09T10:35:20+08:00 ] 127.0.0.1 /admin.php?s=/Activity/index.html
+ERR: 1054:Unknown column 'A.status' in 'field list'
+ [ SQL语句 ] : SELECT `username`,`title`,`description`,`deadline`,`add_time`,A.status FROM onethink_activity _a INNER JOIN onethink_document on onethink_activity.document_id=onethink_document.id INNER JOIN onethink_ucenter_member on onethink_activity.member_id=onethink_ucenter_member.id  
+
+[ 2017-07-09T10:35:58+08:00 ] 127.0.0.1 /admin.php?s=/Activity/index.html
+ERR: 1054:Unknown column 'activity.status' in 'field list'
+ [ SQL语句 ] : SELECT `username`,`title`,`description`,`deadline`,`add_time`,activity.status FROM `onethink_activity` INNER JOIN onethink_document on onethink_activity.document_id=onethink_document.id INNER JOIN onethink_ucenter_member on onethink_activity.member_id=onethink_ucenter_member.id  
+
+[ 2017-07-09T10:58:15+08:00 ] 127.0.0.1 /admin.php?s=/Activity/pass.html
+ERR: Think\Controller:sussecc方法不存在！
+
+[ 2017-07-09T10:58:23+08:00 ] 127.0.0.1 /admin.php?s=/Activity/pass.html
+ERR: Think\Controller:sussecc方法不存在！
+
+[ 2017-07-09T11:16:13+08:00 ] 127.0.0.1 /admin.php?s=/Activity/index.html
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`document_id`,`add_time`,`status`,`member_id` FROM `onethink_activity` INNER JOIN onethink_document on onethink_activity.document_id=onethink_document.id INNER JOIN onethink_ucenter_member on onethink_activity.member_id=onethink_ucenter_member.id  
+
+[ 2017-07-09T11:17:51+08:00 ] 127.0.0.1 /admin.php?s=/Activity/index.html
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`document_id`,`add_time`,`status`,`member_id` FROM `onethink_activity` INNER JOIN onethink_document on onethink_activity.document_id=onethink_document.id INNER JOIN onethink_ucenter_member on onethink_activity.member_id=onethink_ucenter_member.id  
+
+[ 2017-07-09T11:23:10+08:00 ] 127.0.0.1 /admin.php?s=/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0220s ]
+SQL: UPDATE `onethink_menu` SET `title`='活动管理',`sort`='0',`url`='Center/activity',`pid`='124',`group`='物业管理',`hide`='0',`is_dev`='0',`tip`='还是没有' WHERE `id` = 126 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','126','1499570590','操作url：/admin.php?s=/Menu/edit.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T11:23:15+08:00 ] 127.0.0.1 /admin.php?s=/Center/activity.html
+ERR: 模板不存在:./Application/Admin/View/Center/activity.html
+
+[ 2017-07-09T11:23:56+08:00 ] 127.0.0.1 /admin.php?s=/Center/nopass/id/3.html
+ERR: 非法操作:nopass
+

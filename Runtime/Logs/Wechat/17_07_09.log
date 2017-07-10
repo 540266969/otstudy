@@ -1,0 +1,151 @@
+[ 2017-07-09T09:24:47+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0990s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=42 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=42 ) AND (  status=1 ) AND (  deadline>=1499563487 ) LIMIT 0,2   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.1010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:24:57+08:00 ] 127.0.0.1 /wechat.php?s=/Shop/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=43 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=43 ) AND (  status=1 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-09T09:30:29+08:00 ] 127.0.0.1 /wechat.php?s=/Shop/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=43 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=43 ) AND (  status=1 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:30:36+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/activity/document_id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-09T09:37:01+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/activity/document_id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-09T09:37:23+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/activity/document_id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-07-09T09:38:00+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=42 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=42 ) AND (  status=1 ) AND (  deadline>=1499564280 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:38:05+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=42 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=42 ) AND (  status=1 ) AND (  deadline>=1499564285 ) LIMIT 0,2   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:38:15+08:00 ] 127.0.0.1 /wechat.php?s=/Shop/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=43 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=43 ) AND (  status=1 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:38:20+08:00 ] 127.0.0.1 /wechat.php?s=/Shop/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=43 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=43 ) AND (  status=1 ) LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:38:23+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/activity/document_id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_activity` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_activity` WHERE ( member_id=2 And document_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `onethink_activity` (`document_id`,`member_id`,`add_time`,`status`) VALUES ('9','2','1499564303','1') [ RunTime:0.0970s ]
+
+[ 2017-07-09T09:38:26+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/activity/document_id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `onethink_activity` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_activity` WHERE ( member_id=2 And document_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-09T09:38:28+08:00 ] 127.0.0.1 /wechat.php?s=/Shop/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=43 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=43 ) AND (  status=1 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:38:36+08:00 ] 127.0.0.1 /wechat.php?s=/Shop/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=43 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=43 ) AND (  status=1 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:38:40+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=42 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=42 ) AND (  status=1 ) AND (  deadline>=1499564320 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-09T09:38:45+08:00 ] 127.0.0.1 /wechat.php?s=/Activity/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` WHERE (  category_id=42 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  category_id=42 ) AND (  status=1 ) AND (  deadline>=1499564325 ) LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_picture` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_picture` WHERE (  id=6 ) LIMIT 1   [ RunTime:0.0010s ]
+

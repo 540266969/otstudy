@@ -1,0 +1,83 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>导航管理</h2>
+    </div>
+
+    <div class="cf">
+        <a class="btn" href="{:U('add')}">新 增</a>
+        <a class="btn" href="javascript:;">删 除</a>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+            <tr>
+                <th class="row-selected">
+                    <input class="checkbox check-all" type="checkbox">
+                </th>
+                <th>ID</th>
+                <th>发布人</th>
+                <th>发布人电话</th>
+                <th>标题</th>
+                <th>类型</th>
+                <th>价格</th>
+                <th>发布时间</th>
+                <th>截止时间</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="saler">
+                    <tr>
+                        <td>{$saler.id}</td>
+                        <td><a href="{:U('index?pid='.$channel['id'])}">{$saler.id}</a></td>
+                        <td>{$saler.name}</td>
+                        <td>{$saler.tel}</td>
+                        <td>{$saler.title}</td>
+                        <td>{$saler.type_text}</td>
+                        <td>{$saler.price}{$saler.unit_text}</td>
+                        <td>{$saler.create_time|time_format}</td>
+                        <td>{$saler.last_time|time_format}</td>
+                        <td>{$saler.status_text}</td>
+                        <td>
+                            <a title="编辑" href="{:U('edit?id='.$saler['id'])}">编辑</a>
+                            <a href="{:U('setStatus?ids='.$channel['id'].'&status='.abs(1-$channel['status']))}" class="ajax-get">{$channel.status|show_status_op}</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('del?id='.$saler['id'])}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="6" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            //点击排序
+            $('.list_sort').click(function(){
+                var url = $(this).attr('url');
+                var ids = $('.ids:checked');
+                var param = '';
+                if(ids.length > 0){
+                    var str = new Array();
+                    ids.each(function(){
+                        str.push($(this).val());
+                    });
+                    param = str.join(',');
+                }
+
+                if(url != undefined && url != ''){
+                    window.location.href = url + '/ids/' + param;
+                }
+            });
+        });
+    </script>
+</block>
